@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+ /* background: #000; */
+}
+.wrapper{
+    width: 100%;
+    padding: 80px 0px;
+}
+.filter{
+    width: 70%;
+    margin: 0px auto 40px;
+    text-align:center;
+}
+.filter .btn-info{
+    padding: 8px 35px;
+    margin: 0px 5px;
+    background: #08c;
+    color: #fff;
+    border: 2px solid #08c;
+    border-radius: 100px;
+    text-transform: uppercase;
+    transition: .5s;
+
+}
+.filter .btn-info:hover, .filter .btn-info:focus{
+    background: transparent;
+    color: #08c;
+    border: 2px solid #08c;
+    font-weight: 600;
+    box-shadow: 1px 3px 8px #ccc;
+}
+.padd{
+    padding: 2px;
+}
+.portfolio .item{
+    width: 100%;
+    position: relative;
+}
+.item-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0088cc90;
+    text-align: center;
+    transform: scale(0);
+    transition: .3s;
+}
+.portfolio .item:hover .item-hover{
+    transform: scale(1);
+}
+.item-hover .fa{
+    font-size: 40px;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
